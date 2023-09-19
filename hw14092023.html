@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title title1">title 1</div>
+        <div class="accordion-content content1">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            nostrum iusto, atque beatae consectetur doloremque itaque ratione
+            nemo aperiam sit voluptas et eaque maxime eum cupiditate eos
+            possimus enim dolorum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Rem ex reiciendis ab, enim necessitatibus quis
+            cupiditate quod et molestiae distinctio porro voluptas officia
+            corporis omnis soluta repudiandae velit dolor eligendi.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title title2">title 2</div>
+        <div class="accordion-content content2">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            nostrum iusto, atque beatae consectetur doloremque itaque ratione
+            nemo aperiam sit voluptas et eaque maxime eum cupiditate eos
+            possimus enim dolorum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Rerum, unde. Repudiandae ipsum at mollitia,
+            facilis iusto exercitationem laborum ut inventore asperiores tempora
+            perspiciatis nostrum, sit nam numquam non, beatae architecto.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title title3">title 3</div>
+        <div class="accordion-content content3">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            nostrum iusto, atque beatae consectetur doloremque itaque ratione
+            nemo aperiam sit voluptas et eaque maxime eum cupiditate eos
+            possimus enim dolorum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quam praesentium officia, at quisquam, officiis ut
+            est beatae rem error nulla quis nemo obcaecati nostrum quod ratione
+            delectus esse modi exercitationem!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let accordionTitle1 = document.querySelector(".accordion-title.title1");
+      let accordionTitle2 = document.querySelector(".accordion-title.title2");
+      let accordionTitle3 = document.querySelector(".accordion-title.title3");
+
+      let content1 = document.querySelector(".accordion-content.content1");
+      let content2 = document.querySelector(".accordion-content.content2");
+      let content3 = document.querySelector(".accordion-content.content3");
+
+      console.log("accordionTitle1 :>>", content1);
+      console.log("accordionTitle2 :>>", content2);
+      console.log("accordionTitle3 :>>", content3);
+
+      accordionTitle1.onclick = function () {
+        content1.classList.toggle("active");
+      };
+      accordionTitle2.onclick = function () {
+        content2.classList.toggle("active");
+      };
+      accordionTitle3.onclick = function () {
+        content3.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

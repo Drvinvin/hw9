@@ -1,0 +1,28 @@
+body {
+    background-image: url(./images/50800-2560x1600.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.accordion {
+opacity: 0.8;    
+}
+.accordion-item {
+background-color: lightgray;
+overflow: hidden;
+
+}
+.accordion-title {
+background-color: gray;
+padding: 10px;
+cursor: pointer;
+}
+.accordion-content {
+max-height: 0;
+transition: 0.5s;
+}
+.accordion-content.active {
+    max-height: 200px;
+}
+.accordion-content p {
+padding: 10px;
+}
